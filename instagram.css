@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    min-height: 100%;
+    background: dimgrey;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.current-image-wrapper {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.current-image-wrapper img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    opacity: 1;
+    transition: opacity 1.85s;
+}
+
+.current-image-wrapper .hideme {
+    opacity: 0;
+    transition: opacity 0s;
+}
+
+.thumbnails li,
+.thumbnails a,
+.thumbnails img {
+    display: -webkit-inline-flex;
+    width: 10%;
+    height: 10%;
+    border: none;
+}
+
+.thumbnails a {
+    outline: none;
+}
